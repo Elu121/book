@@ -81,8 +81,10 @@ class App extends Component {
           <td>{book.rating}</td>
           <td>
             <Button color="success" size="sm" className="mr-2" onClick={this.editBook.bind(this, book.id, book.title, book.rating)}>Edit</Button>
-            <Button color="danger" size="sm" onClick={this.deleteBook.bind(this, book.id)}>Delete</Button>
-          </td>
+            </td>
+            <td><Button color="danger" size="sm" onClick={this.deleteBook.bind(this, book.id)}>Delete</Button></td>
+            
+         
         </tr>
       )
     });
@@ -163,6 +165,7 @@ class App extends Component {
               <th>Title</th>
               <th>Rating</th>
               <th>Actions</th>
+              <th>Delete Actions</th>
             </tr>
           </thead>
 
